@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ChipsViewSample</string>
+    <string name="email_prompt">Enter a name or email address</string>
+</resources>

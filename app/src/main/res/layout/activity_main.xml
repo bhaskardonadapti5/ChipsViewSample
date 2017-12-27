@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".TokenActivity">
+
+    <LinearLayout
+        android:id="@+id/to_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            android:text="To"
+            android:textStyle="normal" />
+
+        <com.example.bdondapati.chipsviewsample.ContactsCompletionView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:layout_marginLeft="2dp"
+            android:lineSpacingExtra="1dp"
+            android:nextFocusDown="@+id/editText"
+            android:inputType="text|textNoSuggestions|textMultiLine"
+            android:focusableInTouchMode="true" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/to_layout"
+        android:hint="Subject"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tokens"
+        android:textSize="14sp"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>
